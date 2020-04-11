@@ -132,7 +132,7 @@ public class CreateIssueCsv
 						new OutputStreamWriter(
 							new FileOutputStream(filePath),"Shift-JIS")))) {
 				
-				pw.write("#,ステータス,タイトル,作成者,作成日,終了日,URL");
+				pw.write("#,ステータス,タイトル,作成者,作成日,終了日,URL\r\n");
 				//body
 	            for(int i = 0; i < issues.length; i++) {
 	            	Issue issue = issues[i];
