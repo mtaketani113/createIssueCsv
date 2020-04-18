@@ -31,7 +31,7 @@ public class CreateIssueCsv
         Scanner scan = new Scanner(System.in);
         String user = scan.nextLine();
         if(StringUtils.isEmpty(user)) {
-        	System.out.println("ユーザ名名が入っていないので処理を終了します。");
+        	System.out.println("ユーザ名が入っていないので処理を終了します。");
         	scan.close();
         	return;
         }
